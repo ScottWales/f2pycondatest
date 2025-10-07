@@ -6,13 +6,13 @@ source:
     path: ..
 
 requirements:
-    host:
-        - python
-        - numpy
-        - meson
+    build:
         - {{compiler('c')}}
         - {{compiler('fortran')}}
-    run:
+        - meson
+        - python
+        - numpy
+    host:
         - python
         - numpy
 
